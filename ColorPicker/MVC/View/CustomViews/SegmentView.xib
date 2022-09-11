@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentView" customModule="ColorPicker" customModuleProvider="target">
+            <connections>
+                <outlet property="colorView" destination="Ahn-0B-EDw" id="lOV-mV-nfC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-0B-EDw">
+                    <rect key="frame" x="122.5" y="122.5" width="105" height="105"/>
+                    <color key="backgroundColor" name="#ff6100_orange"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ahn-0B-EDw" secondAttribute="height" multiplier="1:1" id="sdy-aL-ReC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-fE-8PZ">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="btnSelectClicked:" destination="-1" eventType="touchUpInside" id="PnV-l4-fiX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Unn-fE-8PZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4IJ-sU-eWk"/>
+                <constraint firstItem="Unn-fE-8PZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Nn-VP-K7x"/>
+                <constraint firstItem="Ahn-0B-EDw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CiC-5z-P90"/>
+                <constraint firstItem="Ahn-0B-EDw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JAQ-N6-Mfl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Unn-fE-8PZ" secondAttribute="bottom" id="jh2-Rf-Y8y"/>
+                <constraint firstItem="Ahn-0B-EDw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.3" id="lCT-cK-VxH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Unn-fE-8PZ" secondAttribute="trailing" id="wv2-5X-WLl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.43478260869566" y="87.723214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="#ff6100_orange">
+            <color red="1" green="0.38039215686274508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
