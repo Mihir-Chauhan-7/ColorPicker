@@ -1,6 +1,5 @@
 # ColorPicker
 Circular Color Picker Wheel
 ## Screenshots
-![App Screenshot](https://github.com/Mihir-Chauhan-7/ColorPicker/assets/37286649/0539c06d-19b9-407c-b03d-c8cacc202a6d/393x852?text=App+Screenshot)
+![App Screenshot](https://github.com/Mihir-Chauhan-7/ColorPicker/assets/37286649/8ce93165-833a-4f47-baa0-36f2b122e719)
 You can pick any combination of color along with opacity (Alpha).
-
